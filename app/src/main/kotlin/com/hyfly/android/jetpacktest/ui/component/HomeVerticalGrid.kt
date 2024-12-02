@@ -11,6 +11,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.hyfly.android.jetpacktest.R
 import com.hyfly.android.jetpacktest.model.HomeImgItem
+import com.hyfly.android.jetpacktest.ui.component.HomeImgElement
 import com.hyfly.android.jetpacktest.ui.theme.JetpackTestTheme
 
 @Composable

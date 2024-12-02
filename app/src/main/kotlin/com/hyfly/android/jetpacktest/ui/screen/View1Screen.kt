@@ -1,4 +1,4 @@
-package com.example.test.ui.screen
+package com.hyfly.android.jetpacktest.ui.screen
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.padding
@@ -20,7 +20,6 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.navigation.NavHostController
-import com.hyfly.android.jetpacktest.ui.component.QrCodeScannerScreen
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -50,9 +49,7 @@ fun View1Screen(navController: NavHostController) {
         )
     }) { innerPadding ->
         Box(modifier = Modifier.padding(innerPadding)) {
-            QrCodeScannerScreen {
-                code = it
-            }
+
         }
     }
 }

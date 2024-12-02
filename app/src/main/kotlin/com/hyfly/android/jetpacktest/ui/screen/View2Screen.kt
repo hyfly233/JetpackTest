@@ -1,4 +1,4 @@
-package com.example.test.ui.screen
+package com.hyfly.android.jetpacktest.ui.screen
 
 import android.net.Uri
 import androidx.activity.compose.rememberLauncherForActivityResult

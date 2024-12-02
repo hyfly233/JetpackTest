@@ -4,14 +4,14 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.example.test.ui.screen.HomeScreen
-import com.example.test.ui.screen.Login
-import com.example.test.ui.screen.View1Screen
-import com.example.test.ui.screen.View2Screen
-import com.example.test.ui.screen.View3Screen
-import com.example.test.ui.screen.View4Screen
 import com.hyfly.android.jetpacktest.R
 import com.hyfly.android.jetpacktest.model.HomeImgItem
+import com.hyfly.android.jetpacktest.ui.screen.HomeScreen
+import com.hyfly.android.jetpacktest.ui.screen.Login
+import com.hyfly.android.jetpacktest.ui.screen.View1Screen
+import com.hyfly.android.jetpacktest.ui.screen.View2Screen
+import com.hyfly.android.jetpacktest.ui.screen.View3Screen
+import com.hyfly.android.jetpacktest.ui.screen.View4Screen
 
 @Composable
 fun OwnNavHost() {

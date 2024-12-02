@@ -1,4 +1,4 @@
-package com.example.test.ui.component
+package com.hyfly.android.jetpacktest.ui.component
 
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes

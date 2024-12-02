@@ -1,4 +1,4 @@
-package com.example.test.ui.screen
+package com.hyfly.android.jetpacktest.ui.screen
 
 import androidx.camera.core.CameraSelector
 import androidx.camera.core.ImageAnalysis
@@ -53,9 +53,8 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.example.test.ui.icon.OwnIcons
 import com.example.test.util.QrCodeAnalyzer
-import com.hyfly.android.jetpacktest.ui.component.TestIconToggleButton
+import com.hyfly.android.jetpacktest.ui.component.IconToggleButton
 import com.hyfly.android.jetpacktest.ui.theme.JetpackTestTheme
-
 
 typealias AndroidSize = android.util.Size
 
@@ -221,7 +220,7 @@ private fun Content(modifier: Modifier) {
                         .weight(2f),
                     contentAlignment = Alignment.Center,
                 ) {
-                    TestIconToggleButton(
+                    IconToggleButton(
                         modifier = Modifier
                             .background(Color.White.copy(alpha = .6f), RoundedCornerShape(16.dp)),
                         checked = false,
@@ -248,7 +247,7 @@ private fun Content(modifier: Modifier) {
                         .weight(2f),
                     contentAlignment = Alignment.Center,
                 ) {
-                    TestIconToggleButton(
+                    IconToggleButton(
                         modifier = Modifier
                             .background(Color.White.copy(alpha = .6f), RoundedCornerShape(16.dp)),
                         checked = false,

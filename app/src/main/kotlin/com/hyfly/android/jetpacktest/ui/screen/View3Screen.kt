@@ -1,4 +1,4 @@
-package com.example.test.ui.screen
+package com.hyfly.android.jetpacktest.ui.screen
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding

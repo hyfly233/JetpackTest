@@ -28,7 +28,7 @@ import com.example.test.ui.icon.OwnIcons
 import com.hyfly.android.jetpacktest.ui.theme.JetpackTestTheme
 
 @Composable
-fun TestIconToggleButton(
+fun IconToggleButton(
     checked: Boolean,
     onCheckedChange: (Boolean) -> Unit,
     modifier: Modifier = Modifier,
@@ -63,7 +63,7 @@ fun TestIconToggleButton(
 @Composable
 fun IconButtonPreview() {
     JetpackTestTheme {
-        TestIconToggleButton(
+        IconToggleButton(
             checked = true,
             onCheckedChange = { },
             icon = {
