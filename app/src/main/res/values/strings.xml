@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Jetpack Test</string>
+
+    <string name="login">Login</string>
+
+    <!-- Home Buttons -->
+    <string name="home_screen">Home</string>
+    <string name="home_view01">View01</string>
+    <string name="home_view02">View02</string>
+    <string name="home_view03">View03</string>
+    <string name="home_view04">View04</string>
+</resources>
