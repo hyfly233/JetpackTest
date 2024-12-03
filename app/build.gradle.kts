@@ -1,7 +1,9 @@
 plugins {
     alias(libs.plugins.android.application)
+    alias(libs.plugins.hilt.android)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    id("kotlin-kapt")
 }
 
 android {
@@ -40,13 +42,7 @@ android {
 }
 
 dependencies {
-
     implementation(libs.androidx.activity.compose)
-    implementation(libs.androidx.camera.camera2)
-    implementation(libs.androidx.camera.core)
-    implementation(libs.androidx.camera.extensions)
-    implementation(libs.androidx.camera.lifecycle)
-    implementation(libs.androidx.camera.view)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.material.icons.extended)
@@ -56,9 +52,22 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.coil.compose)
+    implementation(platform(libs.androidx.compose.bom))
+
+    // 相机
+    implementation(libs.androidx.camera.camera2)
+    implementation(libs.androidx.camera.core)
+    implementation(libs.androidx.camera.extensions)
+    implementation(libs.androidx.camera.lifecycle)
+    implementation(libs.androidx.camera.view)
+
+    // 二维码
     implementation(libs.zxing.android.embedded)
     implementation(libs.zxing.core)
-    implementation(platform(libs.androidx.compose.bom))
+
+    // 依赖注入
+    implementation(libs.hilt.android)
+    kapt(libs.hilt.android.compiler)
 
     testImplementation(libs.junit)
 
@@ -69,4 +78,8 @@ dependencies {
 
     debugImplementation(libs.androidx.ui.test.manifest)
     debugImplementation(libs.androidx.ui.tooling)
+}
+
+kapt {
+    correctErrorTypes = true
 }

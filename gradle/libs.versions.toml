@@ -6,6 +6,8 @@ coilCompose = "2.7.0"
 composeBom = "2024.04.01"
 coreKtx = "1.15.0"
 espressoCore = "3.6.1"
+hiltAndroid = "2.51"
+hiltAndroidCompiler = "2.51.1"
 junit = "4.13.2"
 junitVersion = "1.2.1"
 kotlin = "2.0.0"
@@ -37,12 +39,14 @@ androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-man
 androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
 androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
 coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coilCompose" }
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hiltAndroid" }
+hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hiltAndroidCompiler" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 zxing-android-embedded = { module = "com.journeyapps:zxing-android-embedded", version.ref = "zxingAndroidEmbedded" }
 zxing-core = { module = "com.google.zxing:core", version.ref = "zxingCoreVersion" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
+hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "hiltAndroid" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
-
